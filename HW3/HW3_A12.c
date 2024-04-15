@@ -5,10 +5,12 @@ int main(void)
 
 {
     int a;
-    int b;
+    int sum;
     scanf ("%d", &a);
-    b = a%10 * (a/10)%10 * (a/100)%10;
-    printf ("%d" ,b);
+    sum = (a%10);
+    sum = sum + (a/10)%10;
+    sum = sum + (a/100)%10;
+    printf ("%d" , sum);
 
 
     return 0;
